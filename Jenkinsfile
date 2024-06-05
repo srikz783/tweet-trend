@@ -4,6 +4,9 @@ pipeline {
             label 'maven'
         }
     }
+    tools {
+      mvn 'maven_3.9.2'
+    }
 
     stages {
        stage("build"){
